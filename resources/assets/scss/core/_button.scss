@@ -1,0 +1,30 @@
+button,
+.e-button {
+	&:focus {
+		@apply outline-none;
+	}
+}
+
+.e-button {
+	@apply
+		relative
+		p-4
+		bg-brand-red
+		text-white
+		font-body
+		text-base
+		font-normal
+		leading-none
+		no-underline
+		bg-green
+		text-xl;
+	-webkit-tap-highlight-color: transparent;
+	font-family: 'Bebas Neue', cursive;
+
+	&[disabled] {
+		&,
+		&:focus {
+			@apply cursor-not-allowed opacity-50;
+		}
+	}
+}

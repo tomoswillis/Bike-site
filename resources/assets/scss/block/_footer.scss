@@ -1,0 +1,40 @@
+.footer{
+
+    &__nav{
+        &-list{
+            @apply
+            
+        }
+
+        &-item{
+            display: block;
+
+            @media screen and (max-width: 767px) {
+                display: inline;
+            }
+
+            @media screen and (min-width: 1024px) {
+                display: block;
+            }
+
+        }
+
+        &-links{
+            color: rgb(95, 95, 95);
+            @media screen and (max-width: 767px) {
+                @apply
+                    ml-5
+            }
+
+            @apply
+                text-lg
+                p-0
+                m-0
+                
+        }
+    }
+
+    &__text{
+        color: rgb(95, 95, 95);
+    }
+}

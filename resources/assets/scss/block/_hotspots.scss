@@ -1,0 +1,62 @@
+
+.hotspot{
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	border-radius: 25px;
+	animation: pulse 2s infinite;
+	box-shadow: 0 0 0 0 rgba(36, 179, 93, 0.4);
+	@apply
+		bg-green
+		text-center
+		text-white;
+
+	&--1 {
+		top: 10%;
+		right: 30%;
+		left: 38%;
+		animation-delay: 1s;
+	}
+
+	&--2 {
+		top: 7%;
+		right: 30%;
+		left: 60%;
+	}
+
+	&--3 {
+		top: 25%;
+		right: 30%;
+		left: 62%;
+		animation-delay: 0.5s;
+	}
+
+	&--4 {
+		top: 60%;
+		right: 30%;
+		left: 30%;
+		animation-delay: 1.2s;
+	}
+
+	&--5 {
+		top: 70%;
+		right: 30%;
+		left: 46%;
+		animation-delay: 0.3s;
+	}
+}
+
+@-webkit-keyframes pulse {
+	0% {
+		-webkit-box-shadow: 0 0 0 0 rgba(36, 179, 93, 0.8),
+							0 0 0 0 rgba(36, 179, 93, 0.8);
+	}
+	70% {
+		-webkit-box-shadow: 0 0 0 20px rgba(36, 179, 93, 0),
+							0 0 0 20px rgba(36, 179, 93, 0);
+	}
+		100% {
+		-webkit-box-shadow: 0 0 0 0 rgba(36, 179, 93, 0), 	
+							0 0 0 0 rgba(36, 179, 93, 0);
+	}
+}

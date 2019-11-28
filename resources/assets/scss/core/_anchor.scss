@@ -1,0 +1,21 @@
+a {
+	@apply 
+		text-white
+		cursor-pointer 
+		ml-1
+		p-2
+		text-xl;
+		transition: all 0.2s ease-in-out;
+		font-family: 'Bebas Neue', cursive;
+
+
+	&:hover {
+		@apply 
+		no-underline
+		text-green;
+	}
+
+	&:link {
+	    -webkit-tap-highlight-color: transparent;
+	}
+}

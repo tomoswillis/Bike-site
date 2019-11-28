@@ -1,0 +1,19 @@
+.catagory{
+    height: 25vh;
+    background-size: cover;
+    @apply
+        ;
+
+    &--hardtail{
+        background-image: url('/static/img/categoeies/hardtail.jpg');
+    }
+
+    &--full-sus{
+        background-image: url('/static/img/categoeies/full-sus.jpg');
+    }
+
+    &--rigid{
+        background-image: url('/static/img/categoeies/rigid.jpg');
+    }
+
+}
